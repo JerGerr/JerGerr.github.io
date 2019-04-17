@@ -45,3 +45,4 @@ $(document).ready(function(){
         $(this).attr("href", newUrl); 
         // Set herf value
     });
+  });

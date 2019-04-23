@@ -34,7 +34,20 @@ $(document).ready(function(){
   $(x).text("Who's the best. Jan is!");
   $(x).css('background', '#9e9e9e');
 
-  
+  $(document).ready(function(){
+    var x = document.createElement('form');
+    var subjectField = document.createElement('input');
+    subjectField.type = 'text';
+    var submitForm = document.createElement('input');
+    submitForm.type = 'submit';
+    var textareaField = document.createElement('textarea');
+
+    x.appendChild(subjectField);
+    x.appendChild(textareaField);
+    x.appendChild(submitForm);
+
+    document.body.appendChild(x);    
+});  
 
   $(document).ready(function(){
     $('a[href^="http://"]').each(function(){ 
